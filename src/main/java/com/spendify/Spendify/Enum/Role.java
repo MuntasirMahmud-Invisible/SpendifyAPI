@@ -1,4 +1,4 @@
-package com.spendify.Spendify.model;
+package com.spendify.Spendify.Enum;
 
 public enum Role {
     USER,

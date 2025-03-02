@@ -1,4 +1,4 @@
-package com.spendify.Spendify.service;
+package com.spendify.Spendify.service.impl;
 
 import com.spendify.Spendify.model.User;
 import com.spendify.Spendify.repository.UserRepository;
