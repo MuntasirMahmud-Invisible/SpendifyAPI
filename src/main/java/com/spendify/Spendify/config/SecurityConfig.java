@@ -1,6 +1,6 @@
 package com.spendify.Spendify.config;
 import com.spendify.Spendify.security.JwtRequestFilter;
-import com.spendify.Spendify.service.UserDetailsServiceImpl;
+import com.spendify.Spendify.service.impl.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

@@ -3,7 +3,7 @@ package com.spendify.Spendify.controller;
 
 import com.spendify.Spendify.dto.LoginRequestDto;
 import com.spendify.Spendify.model.User;
-import com.spendify.Spendify.service.AuthService;
+import com.spendify.Spendify.service.impl.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

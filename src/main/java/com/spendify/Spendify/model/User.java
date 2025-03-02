@@ -1,4 +1,5 @@
 package com.spendify.Spendify.model;
+import com.spendify.Spendify.Enum.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
