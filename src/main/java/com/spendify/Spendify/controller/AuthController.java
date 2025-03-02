@@ -1,6 +1,7 @@
 package com.spendify.Spendify.controller;
 
 
+import com.spendify.Spendify.dto.LoginRequestDto;
 import com.spendify.Spendify.model.User;
 import com.spendify.Spendify.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +19,13 @@ public class AuthController {
         return authService.register(user);
     }
 
+//    @PostMapping("/login")
+//    public String login(@RequestParam String username, @RequestParam String password) {
+//        return authService.login(username, password);
+//    }
     @PostMapping("/login")
-    public String login(@RequestParam String username, @RequestParam String password) {
-        return authService.login(username, password);
+    public String login(@RequestBody LoginRequestDto loginRequest) {
+        return authService.login(loginRequest.getUsername(), loginRequest.getPassword());
     }
+
 }

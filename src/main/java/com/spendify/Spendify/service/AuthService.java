@@ -1,6 +1,5 @@
 package com.spendify.Spendify.service;
 
-
 import com.spendify.Spendify.model.User;
 import com.spendify.Spendify.repository.UserRepository;
 import com.spendify.Spendify.security.JwtUtil;
@@ -9,11 +8,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Service;
 
-import java.util.Optional;
 
 @Service
 public class AuthService {

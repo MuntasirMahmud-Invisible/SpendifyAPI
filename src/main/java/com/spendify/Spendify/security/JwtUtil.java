@@ -15,15 +15,17 @@ import java.util.function.Function;
 @Component
 public class JwtUtil {
 
-    @Value("${jwt.secret}")
-    private String secretKey;
+    private final String secretKey = "abcdefghijklmnopqrstuvwxyz0123456789";
+//    @Value("${jwt.secret}")
+//    private String secretKey;
 
     @Value("${jwt.expiration}")
     private long expirationTime;
 
     private Key getSigningKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
-        return Keys.hmacShaKeyFor(keyBytes);
+//        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
+//        return Keys.hmacShaKeyFor(keyBytes);
+        return Keys.secretKeyFor(SignatureAlgorithm.HS256);
     }
 
     public String generateToken(String username) {
